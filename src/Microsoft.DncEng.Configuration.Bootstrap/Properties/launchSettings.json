@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Microsoft.DncEng.Configuration.Bootstrap": {
+      "commandName": "Project",
+      "commandLineArgs": " -r \"https://management.azure.com\" -r \"https://vault.azure.net\""
+    }
+  }
+}
+
+//az login --scope https://management.core.windows.net//.default
+// az account get-access-token

@@ -19,8 +19,8 @@ class Program
         options.Parse(args);
         Console.WriteLine("Bootstrapping configuration.");
 
-        LocalDevTokenCredential.IsBoostrapping = true;
-        var cred = new LocalDevTokenCredential();
+        LocalDevTokenCredentialAli.IsBoostrapping = true;
+        var cred = new LocalDevTokenCredentialAli();
         foreach (var resource in resources)
         {
             cred.GetToken(new TokenRequestContext(new[] {resource + "/.default"}), CancellationToken.None);
